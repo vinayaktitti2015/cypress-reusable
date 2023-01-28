@@ -1,6 +1,6 @@
 {
   "name": "cypress-reusable",
-  "version": "2.9.0",
+  "version": "2.10.0",
   "description": "web ui re-usable functions",
   "main": "index.js",
   "type": "module",
