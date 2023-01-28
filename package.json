@@ -21,26 +21,26 @@
   },
   "homepage": "https://github.com/vinayak-prime/cypress-reusable#readme",
   "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babelify": "^10.0.0",
-    "browserify": "^17.0.0"
+    "browserify": "^17.0.0",
+    "es2015": "^0.0.0"
   },
-  "dependencies": {
-    "@babel/core": "^7.20.12"
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./index.js"
+      },
+      "require": {
+        "default": "./index.js"
+      }
+    }
   },
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "presets": [
-            "@babel/preset-env"
-          ]
-        }
-      ]
-    ]
-  }
+  "files": [
+    "utils/helper.js"
+  ]
 }
