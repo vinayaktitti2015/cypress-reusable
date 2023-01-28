@@ -3,6 +3,8 @@
   "version": "2.8.0",
   "description": "web ui re-usable functions",
   "main": "index.js",
+  "sourceType": "module",
+  "exports": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,16 +32,7 @@
     "browserify": "^17.0.0",
     "es2015": "^0.0.0"
   },
-  "exports": {
-    ".": {
-      "import": {
-        "default": "./index.js"
-      },
-      "require": {
-        "default": "./index.js"
-      }
-    }
-  },
+  
   "files": [
     "utils/helper.js"
   ]
