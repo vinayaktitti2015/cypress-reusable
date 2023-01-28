@@ -3,7 +3,7 @@
   "version": "2.9.0",
   "description": "web ui re-usable functions",
   "main": "index.js",
-  "sourceType": "module",
+  "type": "module",
   "exports": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
