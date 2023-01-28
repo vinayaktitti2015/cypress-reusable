@@ -1,3 +1,3 @@
-const customFunctions = require("./utils/helper.js");
-
-module.exports = customFunctions;
+module.exports = {
+  customFunctions: require("./utils/helper.js"),
+};

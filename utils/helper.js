@@ -1,43 +1,43 @@
-export const eleClick = (loc) => {
+export function eleClick(loc) {
   cy.get(loc).click();
-};
+}
 
-export const eleForceClick = (loc) => {
+export function eleForceClick(loc) {
   cy.get(loc).click({ force: true });
-};
+}
 
-export const eleSelect = (loc, args) => {
+export function eleSelect(loc, args) {
   cy.get(loc).select(args);
-};
+}
 
-export const eleType = (loc, args) => {
+export function eleType(loc, args) {
   cy.get(loc).type(args).should("have.value", args);
-};
+}
 
-export const eleCheck = (loc) => {
+export function eleCheck(loc) {
   cy.get(loc).should("not.be.checked").check();
-};
+}
 
-export const eleUnCheck = (loc) => {
-  cy.get(loc).should('be.checked').uncheck();
-};
+export function eleUnCheck(loc) {
+  cy.get(loc).should("be.checked").uncheck();
+}
 
-export const eleScrollIntoView = (loc) => {
+export function eleScrollIntoView(loc) {
   cy.get(loc).scrollIntoView();
-};
+}
 
-export const eleVisible = (loc) => {
+export function eleVisible(loc) {
   cy.get(loc).should("be.visible");
-};
+}
 
-export const eleNotVisible = (loc) => {
+export function eleNotVisible(loc) {
   cy.get(loc).should("not.be.visible");
-};
+}
 
-export const eleContainsText = (args) => {
+export function eleContainsText(args) {
   cy.contains(args).should("be.visible");
-};
+}
 
-export const eleNotContainsText = (args) => {
+export function eleNotContainsText(args) {
   cy.contains(args).should("not.be.visible");
-};
+}
