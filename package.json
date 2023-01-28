@@ -1,0 +1,23 @@
+{
+  "name": "cypress-reusable",
+  "version": "2.1.0",
+  "description": "web ui re-usable functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vinayak-prime/cypress-reusable.git"
+  },
+  "keywords": [
+    "cypress-reusable",
+    "reusable-functions"
+  ],
+  "author": "vinayak titti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vinayak-prime/cypress-reusable/issues"
+  },
+  "homepage": "https://github.com/vinayak-prime/cypress-reusable#readme"
+}
