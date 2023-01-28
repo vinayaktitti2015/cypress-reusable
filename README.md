@@ -11,7 +11,7 @@ npm install cypress-reusable
 Import this to your index.js to bring in all generic reusable commands
 
 ```javascript
-import "custom-reusable";
+import "cypress-reusable";
 ```
 
 #### In your test file
