@@ -1,3 +1,3 @@
 module.exports = {
-  customFunctions: require("./utils/helper.ts"),
+  customFunctions: require("./utils/helper"),
 };
