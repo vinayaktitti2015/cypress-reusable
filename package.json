@@ -2,11 +2,10 @@
   "name": "cypress-reusable",
   "version": "2.11.0",
   "description": "web ui re-usable functions",
-  "main": "index.js",
-  "type": "module",
-  "exports": "./index.js",
+  "types": "./lib/cjs/types/index.d.ts",
+  "main": "./lib/cjs/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   
   },
   "repository": {
     "type": "git",
@@ -25,14 +24,32 @@
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
+    "@cypress/webpack-preprocessor": "^5.16.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babelify": "^10.0.0",
     "browserify": "^17.0.0",
-    "es2015": "^0.0.0"
+    "cypress": "^12.4.1",
+    "es2015": "^0.0.0",
+    "path": "^0.12.7",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0"
   },
   "files": [
-    "utils/helper.js"
-  ]
+    "lib/**/*"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/esm/types/index.d.ts",
+        "default": "./lib/esm/index.mjs"
+      },
+      "require": {
+        "types": "./lib/cjs/types/index.d.ts",
+        "default": "./lib/cjs/index.js"
+      }
+    }
+  }
 }
