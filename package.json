@@ -1,12 +1,10 @@
 {
   "name": "cypress-reusable",
-  "version": "2.11.0",
+  "version": "3.0.0",
   "description": "web ui re-usable functions",
   "types": "./lib/cjs/types/index.d.ts",
   "main": "./lib/cjs/index.js",
-  "scripts": {
-   
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vinayak-prime/cypress-reusable.git"
